@@ -1,0 +1,6 @@
+{
+  "name": "experiments-monorepo",
+  "scripts": {
+    "build": "mkdir -p dist/Experiment-4/auth-context-app && mkdir -p dist/Experiment-4/dark-mode-context && mkdir -p dist/Experiment-5 && mkdir -p dist/Experiment-6 && cd Experiment-4/auth-context-app && npm install && npm run build && cp -r dist/* ../../dist/Experiment-4/auth-context-app && cd ../dark-mode-context && npm install && npm run build && cp -r dist/* ../../dist/Experiment-4/dark-mode-context && cd ../../Experiment-5 && npm install && npm run build && cp -r dist/* ../dist/Experiment-5 && cd ../Experiment-6 && npm install && npm run build && cp -r dist/* ../dist/Experiment-6"
+  }
+}
