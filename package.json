@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "install-all": "npm install --prefix Experiment-4/auth-context-app && npm install --prefix Experiment-4/dark-mode-context && npm install --prefix Experiment-5 && npm install --prefix Experiment-6",
-    "build": "mkdir -p dist/Experiment-4/auth-context-app && mkdir -p dist/Experiment-4/dark-mode-context && mkdir -p dist/Experiment-5 && mkdir -p dist/Experiment-6 && npm run install-all && npm run build:auth && npm run build:dark && npm run build:exp5 && npm run build:exp6",
+    "build": "mkdir -p dist/Experiment-4/auth-context-app dist/Experiment-4/dark-mode-context dist/Experiment-5 dist/Experiment-6 && npm run install-all && npm run build:auth && npm run build:dark && npm run build:exp5 && npm run build:exp6",
     "build:auth": "cd Experiment-4/auth-context-app && npm run build && cp -r dist/* ../../dist/Experiment-4/auth-context-app",
     "build:dark": "cd Experiment-4/dark-mode-context && npm run build && cp -r dist/* ../../dist/Experiment-4/dark-mode-context",
     "build:exp5": "cd Experiment-5 && npm run build && cp -r dist/* ../dist/Experiment-5",
